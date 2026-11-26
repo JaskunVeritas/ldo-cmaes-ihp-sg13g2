@@ -1,0 +1,64 @@
+** sch_path: /home/jaskun/designs/1iee34/tb_ldo_DCI.sch
+**.subckt tb_ldo_DCI
+V1 VDD GND dc 1.5 ac 0
+V2 VSS GND 0
+V3 VREF VSS 0.6
+x1 VDD VREF net1 VLDO net1 VSS LDO1
+I0 VLDO VSS 5m
+**** begin user architecture code
+
+
+.param temp=27
+.options savecurrents
+.op
+.save all
+
+.control
+  set filetype=ascii
+  set units=degress
+  dc i0 1m 5m 0.5u
+
+  write tb_ldo_DCI_03.raw v(vldo)
+  set appendwrite
+.endc
+
+
+
+
+.lib cornerMOSlv.lib mos_tt
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  LDO1.sym # of pins=6
+** sym_path: /home/jaskun/designs/1iee34/LDO1.sym
+** sch_path: /home/jaskun/designs/1iee34/LDO1.sch
+.subckt LDO1 VDD VREF+ VREF- VLDO VRET VSS
+*.iopin VREF+
+*.iopin VLDO
+*.iopin VDD
+*.iopin VREF-
+*.iopin VSS
+*.iopin VRET
+C1 VLDO VSS 1000n m=1
+CC net4 net1 3.66634937845e-05n m=1
+R1 VLDO VRET 21.4868375563k m=1
+R2 VRET VSS 21.4868375563k m=1
+C3 VLDO net5 5n m=1
+R3 net1 net5 30k m=1
+XMG VLDO net1 VDD VDD sg13_lv_pmos w=250u l=0.13u ng=13 m=1 mm_ok=1
+XM3 net3 net3 VDD VDD sg13_lv_pmos w=14.74u l=32.58u ng=2 m=1 mm_ok=1
+XM4 net4 net3 VDD VDD sg13_lv_pmos w=14.74u l=32.58u ng=2 m=1 mm_ok=1
+XM6 net1 net4 VDD VDD sg13_lv_pmos w=3.58u l=1.5u ng=1 m=1 mm_ok=1
+XM1 net2 VREF+ net3 VSS sg13_lv_nmos w=176.34u l=8.55u ng=18 m=1 mm_ok=1
+XM2 net2 VREF- net4 VSS sg13_lv_nmos w=176.34u l=8.55u ng=18 m=1 mm_ok=1
+XM5 VSS VG net2 VSS sg13_lv_nmos w=2.2u l=2u ng=1 m=1 mm_ok=1
+XM7 VSS VG net1 VSS sg13_lv_nmos w=4.4u l=2u ng=1 m=1 mm_ok=1
+XM8 VSS VG VG VSS sg13_lv_nmos w=2.75u l=2u ng=1 m=1 mm_ok=1
+XM10 net6 net6 VDD VDD sg13_lv_pmos w=2u l=8u ng=1 m=1 mm_ok=1
+XM11 VG VDD net6 VSS sg13_lv_nmos w=2u l=8u ng=1 m=1 mm_ok=1
+.ends
+
+.GLOBAL GND
+.end

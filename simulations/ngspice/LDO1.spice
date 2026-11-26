@@ -1,0 +1,27 @@
+** sch_path: /home/jaskun/designs/1iee34/LDO1.sch
+**.subckt LDO1 VDD VREF+ VREF- VLDO VRET VSS
+*.iopin VREF+
+*.iopin VLDO
+*.iopin VDD
+*.iopin VREF-
+*.iopin VSS
+*.iopin VRET
+C1 VLDO VSS 1000.0n m=1
+CC net4 net1 0.000250706636439167n m=1
+R1 VLDO VRET 218.31k m=1
+R2 VRET VSS 61.74k m=1
+C3 VLDO net5 5n m=1
+R3 net1 net5 30k m=1
+XMG VLDO net1 VDD VDD sg13_lv_pmos w=112.79u l=0.21u ng=6 m=1 mm_ok=1
+XM3 net3 net3 VDD VDD sg13_lv_pmos w=190.88u l=2.0u ng=20 m=1 mm_ok=1
+XM4 net4 net3 VDD VDD sg13_lv_pmos w=190.88u l=2.0u ng=20 m=1 mm_ok=1
+XM6 net1 net4 VDD VDD sg13_lv_pmos w=0.52u l=6.26u ng=1 m=1 mm_ok=1
+XM1 net2 VREF+ net3 VSS sg13_lv_nmos w=138.4u l=10.0u ng=14 m=1 mm_ok=1
+XM2 net2 VREF- net4 VSS sg13_lv_nmos w=138.4u l=10.0u ng=14 m=1 mm_ok=1
+XM5 VSS VG net2 VSS sg13_lv_nmos w=19.52u l=0.3u ng=2 m=1 mm_ok=1
+XM7 VSS VG net1 VSS sg13_lv_nmos w=0.57u l=0.18u ng=1 m=1 mm_ok=1
+XM8 VSS VG VG VSS sg13_lv_nmos w=11.6u l=9.56u ng=2 m=1 mm_ok=1
+XM10 net6 net6 VDD VDD sg13_lv_pmos w=2u l=8u ng=1 m=1 mm_ok=1
+XM11 VG VDD net6 VSS sg13_lv_nmos w=2u l=8u ng=1 m=1 mm_ok=1
+**.ends
+.end

@@ -1,0 +1,18 @@
+Title: ** sch_path: /home/jaskun/designs/1iee34/tb_ldo_psrr.sch
+Date: Thu Nov 26 01:33:16  2026
+Command: ngspice-44.2, Build Wed Oct 21 06:28:28 UTC 2026
+Plotname: Operating Point
+Flags: real
+No. Variables: 4
+No. Points: 1
+Variables:
+	0	v(vdd)	voltage
+	1	v(vdd)	voltage
+	2	i(v1)	current
+	3	i(@r3[i])	current
+Values:
+ 0	1.500000000000000e+00
+	1.500000000000000e+00
+	-5.044534436527331e-03
+	4.996888301100801e-03
+

@@ -1,0 +1,848 @@
+Title: ** sch_path: /home/jaskun/designs/1iee34/tb_ldo_noise.sch
+Date: Tue Nov 24 12:16:04  2026
+Command: ngspice-44.2, Build Wed Oct 21 06:28:28 UTC 2026
+Plotname: Integrated Noise
+Flags: real
+No. Variables: 419
+No. Points: 1
+Variables:
+	0	v(onoise_total_r.x1.r3_thermal)	voltage
+	1	i(@c.x1.c1[i])	current
+	2	i(@c.x1.c3[i])	current
+	3	i(@c.x1.cc[i])	current
+	4	@n.x1.xm5.nsg13_lv_nmos[gds]	admittance
+	5	@n.x1.xm5.nsg13_lv_nmos[gm]	admittance
+	6	i(@n.x1.xm5.nsg13_lv_nmos[ids])	current
+	7	@n.x1.xm6.nsg13_lv_pmos[gds]	admittance
+	8	@n.x1.xm6.nsg13_lv_pmos[gm]	admittance
+	9	@n.x1.xm7.nsg13_lv_nmos[gds]	admittance
+	10	@n.x1.xm7.nsg13_lv_nmos[gm]	admittance
+	11	i(@n.x1.xm7.nsg13_lv_nmos[ids])	current
+	12	i(@n.x1.xm8.nsg13_lv_nmos[ids])	current
+	13	@n.x1.xmg.nsg13_lv_pmos[gds]	admittance
+	14	@n.x1.xmg.nsg13_lv_pmos[gm]	admittance
+	15	i(@n.x1.xmg.nsg13_lv_pmos[ids])	current
+	16	i(@r.x1.r1[i])	current
+	17	i(@r.x1.r2[i])	current
+	18	i(@r.x1.r3[i])	current
+	19	i(@r3[i])	current
+	20	v(inoise_total)	voltage
+	21	v(inoise_total_n.x1.xm1.nsg13_lv_nmos)	voltage
+	22	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_flicker)	voltage
+	23	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_flicker)	voltage
+	24	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_ibd)	voltage
+	25	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_ibs)	voltage
+	26	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_idid)	voltage
+	27	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_ididedge)	voltage
+	28	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_igd)	voltage
+	29	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_igig)	voltage
+	30	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_igs)	voltage
+	31	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_rbulk)	voltage
+	32	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_rdrain)	voltage
+	33	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_rgate)	voltage
+	34	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_rjund)	voltage
+	35	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_rjuns)	voltage
+	36	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_rsource)	voltage
+	37	v(inoise_total_n.x1.xm1.nsg13_lv_nmos_rwell)	voltage
+	38	v(inoise_total_n.x1.xm2.nsg13_lv_nmos)	voltage
+	39	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_flicker)	voltage
+	40	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_flicker)	voltage
+	41	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_ibd)	voltage
+	42	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_ibs)	voltage
+	43	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_idid)	voltage
+	44	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_ididedge)	voltage
+	45	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_igd)	voltage
+	46	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_igig)	voltage
+	47	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_igs)	voltage
+	48	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_rbulk)	voltage
+	49	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_rdrain)	voltage
+	50	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_rgate)	voltage
+	51	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_rjund)	voltage
+	52	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_rjuns)	voltage
+	53	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_rsource)	voltage
+	54	v(inoise_total_n.x1.xm2.nsg13_lv_nmos_rwell)	voltage
+	55	v(inoise_total_n.x1.xm3.nsg13_lv_pmos)	voltage
+	56	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_flicker)	voltage
+	57	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_flicker)	voltage
+	58	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_ibd)	voltage
+	59	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_ibs)	voltage
+	60	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_idid)	voltage
+	61	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_ididedge)	voltage
+	62	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_igd)	voltage
+	63	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_igig)	voltage
+	64	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_igs)	voltage
+	65	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_rbulk)	voltage
+	66	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_rdrain)	voltage
+	67	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_rgate)	voltage
+	68	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_rjund)	voltage
+	69	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_rjuns)	voltage
+	70	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_rsource)	voltage
+	71	v(inoise_total_n.x1.xm3.nsg13_lv_pmos_rwell)	voltage
+	72	v(inoise_total_n.x1.xm4.nsg13_lv_pmos)	voltage
+	73	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_flicker)	voltage
+	74	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_flicker)	voltage
+	75	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_ibd)	voltage
+	76	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_ibs)	voltage
+	77	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_idid)	voltage
+	78	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_ididedge)	voltage
+	79	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_igd)	voltage
+	80	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_igig)	voltage
+	81	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_igs)	voltage
+	82	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_rbulk)	voltage
+	83	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_rdrain)	voltage
+	84	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_rgate)	voltage
+	85	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_rjund)	voltage
+	86	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_rjuns)	voltage
+	87	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_rsource)	voltage
+	88	v(inoise_total_n.x1.xm4.nsg13_lv_pmos_rwell)	voltage
+	89	v(inoise_total_n.x1.xm5.nsg13_lv_nmos)	voltage
+	90	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_flicker)	voltage
+	91	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_flicker)	voltage
+	92	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_ibd)	voltage
+	93	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_ibs)	voltage
+	94	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_idid)	voltage
+	95	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_ididedge)	voltage
+	96	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_igd)	voltage
+	97	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_igig)	voltage
+	98	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_igs)	voltage
+	99	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_rbulk)	voltage
+	100	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_rdrain)	voltage
+	101	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_rgate)	voltage
+	102	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_rjund)	voltage
+	103	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_rjuns)	voltage
+	104	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_rsource)	voltage
+	105	v(inoise_total_n.x1.xm5.nsg13_lv_nmos_rwell)	voltage
+	106	v(inoise_total_n.x1.xm6.nsg13_lv_pmos)	voltage
+	107	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_flicker)	voltage
+	108	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_flicker)	voltage
+	109	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_ibd)	voltage
+	110	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_ibs)	voltage
+	111	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_idid)	voltage
+	112	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_ididedge)	voltage
+	113	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_igd)	voltage
+	114	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_igig)	voltage
+	115	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_igs)	voltage
+	116	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_rbulk)	voltage
+	117	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_rdrain)	voltage
+	118	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_rgate)	voltage
+	119	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_rjund)	voltage
+	120	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_rjuns)	voltage
+	121	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_rsource)	voltage
+	122	v(inoise_total_n.x1.xm6.nsg13_lv_pmos_rwell)	voltage
+	123	v(inoise_total_n.x1.xm7.nsg13_lv_nmos)	voltage
+	124	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_flicker)	voltage
+	125	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_flicker)	voltage
+	126	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_ibd)	voltage
+	127	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_ibs)	voltage
+	128	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_idid)	voltage
+	129	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_ididedge)	voltage
+	130	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_igd)	voltage
+	131	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_igig)	voltage
+	132	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_igs)	voltage
+	133	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_rbulk)	voltage
+	134	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_rdrain)	voltage
+	135	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_rgate)	voltage
+	136	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_rjund)	voltage
+	137	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_rjuns)	voltage
+	138	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_rsource)	voltage
+	139	v(inoise_total_n.x1.xm7.nsg13_lv_nmos_rwell)	voltage
+	140	v(inoise_total_n.x1.xm8.nsg13_lv_nmos)	voltage
+	141	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_flicker)	voltage
+	142	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_flicker)	voltage
+	143	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_ibd)	voltage
+	144	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_ibs)	voltage
+	145	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_idid)	voltage
+	146	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_ididedge)	voltage
+	147	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_igd)	voltage
+	148	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_igig)	voltage
+	149	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_igs)	voltage
+	150	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_rbulk)	voltage
+	151	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_rdrain)	voltage
+	152	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_rgate)	voltage
+	153	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_rjund)	voltage
+	154	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_rjuns)	voltage
+	155	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_rsource)	voltage
+	156	v(inoise_total_n.x1.xm8.nsg13_lv_nmos_rwell)	voltage
+	157	v(inoise_total_n.x1.xm10.nsg13_lv_pmos)	voltage
+	158	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_flicker)	voltage
+	159	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_flicker)	voltage
+	160	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_ibd)	voltage
+	161	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_ibs)	voltage
+	162	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_idid)	voltage
+	163	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_ididedge)	voltage
+	164	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_igd)	voltage
+	165	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_igig)	voltage
+	166	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_igs)	voltage
+	167	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_rbulk)	voltage
+	168	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_rdrain)	voltage
+	169	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_rgate)	voltage
+	170	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_rjund)	voltage
+	171	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_rjuns)	voltage
+	172	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_rsource)	voltage
+	173	v(inoise_total_n.x1.xm10.nsg13_lv_pmos_rwell)	voltage
+	174	v(inoise_total_n.x1.xm11.nsg13_lv_nmos)	voltage
+	175	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_flicker)	voltage
+	176	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_flicker)	voltage
+	177	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_ibd)	voltage
+	178	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_ibs)	voltage
+	179	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_idid)	voltage
+	180	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_ididedge)	voltage
+	181	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_igd)	voltage
+	182	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_igig)	voltage
+	183	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_igs)	voltage
+	184	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_rbulk)	voltage
+	185	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_rdrain)	voltage
+	186	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_rgate)	voltage
+	187	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_rjund)	voltage
+	188	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_rjuns)	voltage
+	189	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_rsource)	voltage
+	190	v(inoise_total_n.x1.xm11.nsg13_lv_nmos_rwell)	voltage
+	191	v(inoise_total_n.x1.xmg.nsg13_lv_pmos)	voltage
+	192	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_flicker)	voltage
+	193	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_flicker)	voltage
+	194	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_ibd)	voltage
+	195	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_ibs)	voltage
+	196	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_idid)	voltage
+	197	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_ididedge)	voltage
+	198	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_igd)	voltage
+	199	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_igig)	voltage
+	200	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_igs)	voltage
+	201	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_rbulk)	voltage
+	202	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_rdrain)	voltage
+	203	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_rgate)	voltage
+	204	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_rjund)	voltage
+	205	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_rjuns)	voltage
+	206	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_rsource)	voltage
+	207	v(inoise_total_n.x1.xmg.nsg13_lv_pmos_rwell)	voltage
+	208	v(inoise_total_r.x1.r1)	voltage
+	209	v(inoise_total_r.x1.r1_1overf)	voltage
+	210	v(inoise_total_r.x1.r1_thermal)	voltage
+	211	v(inoise_total_r.x1.r2)	voltage
+	212	v(inoise_total_r.x1.r2_1overf)	voltage
+	213	v(inoise_total_r.x1.r2_thermal)	voltage
+	214	v(inoise_total_r.x1.r3)	voltage
+	215	v(inoise_total_r.x1.r3_1overf)	voltage
+	216	v(inoise_total_r.x1.r3_thermal)	voltage
+	217	v(inoise_total_r3)	voltage
+	218	v(inoise_total_r3_1overf)	voltage
+	219	v(inoise_total_r3_thermal)	voltage
+	220	v(onoise_total)	voltage
+	221	v(onoise_total_n.x1.xm1.nsg13_lv_nmos)	voltage
+	222	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_flicker)	voltage
+	223	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_flicker)	voltage
+	224	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_ibd)	voltage
+	225	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_ibs)	voltage
+	226	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_idid)	voltage
+	227	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_ididedge)	voltage
+	228	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_igd)	voltage
+	229	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_igig)	voltage
+	230	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_igs)	voltage
+	231	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_rbulk)	voltage
+	232	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_rdrain)	voltage
+	233	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_rgate)	voltage
+	234	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_rjund)	voltage
+	235	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_rjuns)	voltage
+	236	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_rsource)	voltage
+	237	v(onoise_total_n.x1.xm1.nsg13_lv_nmos_rwell)	voltage
+	238	v(onoise_total_n.x1.xm2.nsg13_lv_nmos)	voltage
+	239	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_flicker)	voltage
+	240	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_flicker)	voltage
+	241	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_ibd)	voltage
+	242	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_ibs)	voltage
+	243	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_idid)	voltage
+	244	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_ididedge)	voltage
+	245	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_igd)	voltage
+	246	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_igig)	voltage
+	247	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_igs)	voltage
+	248	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_rbulk)	voltage
+	249	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_rdrain)	voltage
+	250	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_rgate)	voltage
+	251	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_rjund)	voltage
+	252	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_rjuns)	voltage
+	253	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_rsource)	voltage
+	254	v(onoise_total_n.x1.xm2.nsg13_lv_nmos_rwell)	voltage
+	255	v(onoise_total_n.x1.xm3.nsg13_lv_pmos)	voltage
+	256	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_flicker)	voltage
+	257	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_flicker)	voltage
+	258	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_ibd)	voltage
+	259	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_ibs)	voltage
+	260	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_idid)	voltage
+	261	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_ididedge)	voltage
+	262	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_igd)	voltage
+	263	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_igig)	voltage
+	264	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_igs)	voltage
+	265	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_rbulk)	voltage
+	266	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_rdrain)	voltage
+	267	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_rgate)	voltage
+	268	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_rjund)	voltage
+	269	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_rjuns)	voltage
+	270	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_rsource)	voltage
+	271	v(onoise_total_n.x1.xm3.nsg13_lv_pmos_rwell)	voltage
+	272	v(onoise_total_n.x1.xm4.nsg13_lv_pmos)	voltage
+	273	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_flicker)	voltage
+	274	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_flicker)	voltage
+	275	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_ibd)	voltage
+	276	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_ibs)	voltage
+	277	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_idid)	voltage
+	278	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_ididedge)	voltage
+	279	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_igd)	voltage
+	280	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_igig)	voltage
+	281	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_igs)	voltage
+	282	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_rbulk)	voltage
+	283	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_rdrain)	voltage
+	284	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_rgate)	voltage
+	285	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_rjund)	voltage
+	286	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_rjuns)	voltage
+	287	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_rsource)	voltage
+	288	v(onoise_total_n.x1.xm4.nsg13_lv_pmos_rwell)	voltage
+	289	v(onoise_total_n.x1.xm5.nsg13_lv_nmos)	voltage
+	290	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_flicker)	voltage
+	291	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_flicker)	voltage
+	292	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_ibd)	voltage
+	293	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_ibs)	voltage
+	294	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_idid)	voltage
+	295	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_ididedge)	voltage
+	296	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_igd)	voltage
+	297	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_igig)	voltage
+	298	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_igs)	voltage
+	299	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_rbulk)	voltage
+	300	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_rdrain)	voltage
+	301	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_rgate)	voltage
+	302	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_rjund)	voltage
+	303	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_rjuns)	voltage
+	304	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_rsource)	voltage
+	305	v(onoise_total_n.x1.xm5.nsg13_lv_nmos_rwell)	voltage
+	306	v(onoise_total_n.x1.xm6.nsg13_lv_pmos)	voltage
+	307	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_flicker)	voltage
+	308	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_flicker)	voltage
+	309	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_ibd)	voltage
+	310	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_ibs)	voltage
+	311	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_idid)	voltage
+	312	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_ididedge)	voltage
+	313	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_igd)	voltage
+	314	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_igig)	voltage
+	315	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_igs)	voltage
+	316	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_rbulk)	voltage
+	317	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_rdrain)	voltage
+	318	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_rgate)	voltage
+	319	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_rjund)	voltage
+	320	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_rjuns)	voltage
+	321	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_rsource)	voltage
+	322	v(onoise_total_n.x1.xm6.nsg13_lv_pmos_rwell)	voltage
+	323	v(onoise_total_n.x1.xm7.nsg13_lv_nmos)	voltage
+	324	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_flicker)	voltage
+	325	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_flicker)	voltage
+	326	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_ibd)	voltage
+	327	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_ibs)	voltage
+	328	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_idid)	voltage
+	329	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_ididedge)	voltage
+	330	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_igd)	voltage
+	331	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_igig)	voltage
+	332	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_igs)	voltage
+	333	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_rbulk)	voltage
+	334	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_rdrain)	voltage
+	335	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_rgate)	voltage
+	336	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_rjund)	voltage
+	337	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_rjuns)	voltage
+	338	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_rsource)	voltage
+	339	v(onoise_total_n.x1.xm7.nsg13_lv_nmos_rwell)	voltage
+	340	v(onoise_total_n.x1.xm8.nsg13_lv_nmos)	voltage
+	341	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_flicker)	voltage
+	342	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_flicker)	voltage
+	343	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_ibd)	voltage
+	344	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_ibs)	voltage
+	345	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_idid)	voltage
+	346	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_ididedge)	voltage
+	347	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_igd)	voltage
+	348	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_igig)	voltage
+	349	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_igs)	voltage
+	350	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_rbulk)	voltage
+	351	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_rdrain)	voltage
+	352	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_rgate)	voltage
+	353	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_rjund)	voltage
+	354	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_rjuns)	voltage
+	355	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_rsource)	voltage
+	356	v(onoise_total_n.x1.xm8.nsg13_lv_nmos_rwell)	voltage
+	357	v(onoise_total_n.x1.xm10.nsg13_lv_pmos)	voltage
+	358	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_flicker)	voltage
+	359	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_flicker)	voltage
+	360	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_ibd)	voltage
+	361	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_ibs)	voltage
+	362	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_idid)	voltage
+	363	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_ididedge)	voltage
+	364	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_igd)	voltage
+	365	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_igig)	voltage
+	366	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_igs)	voltage
+	367	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_rbulk)	voltage
+	368	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_rdrain)	voltage
+	369	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_rgate)	voltage
+	370	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_rjund)	voltage
+	371	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_rjuns)	voltage
+	372	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_rsource)	voltage
+	373	v(onoise_total_n.x1.xm10.nsg13_lv_pmos_rwell)	voltage
+	374	v(onoise_total_n.x1.xm11.nsg13_lv_nmos)	voltage
+	375	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_flicker)	voltage
+	376	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_flicker)	voltage
+	377	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_ibd)	voltage
+	378	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_ibs)	voltage
+	379	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_idid)	voltage
+	380	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_ididedge)	voltage
+	381	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_igd)	voltage
+	382	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_igig)	voltage
+	383	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_igs)	voltage
+	384	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_rbulk)	voltage
+	385	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_rdrain)	voltage
+	386	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_rgate)	voltage
+	387	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_rjund)	voltage
+	388	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_rjuns)	voltage
+	389	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_rsource)	voltage
+	390	v(onoise_total_n.x1.xm11.nsg13_lv_nmos_rwell)	voltage
+	391	v(onoise_total_n.x1.xmg.nsg13_lv_pmos)	voltage
+	392	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_flicker)	voltage
+	393	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_flicker)	voltage
+	394	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_ibd)	voltage
+	395	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_ibs)	voltage
+	396	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_idid)	voltage
+	397	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_ididedge)	voltage
+	398	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_igd)	voltage
+	399	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_igig)	voltage
+	400	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_igs)	voltage
+	401	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_rbulk)	voltage
+	402	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_rdrain)	voltage
+	403	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_rgate)	voltage
+	404	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_rjund)	voltage
+	405	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_rjuns)	voltage
+	406	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_rsource)	voltage
+	407	v(onoise_total_n.x1.xmg.nsg13_lv_pmos_rwell)	voltage
+	408	v(onoise_total_r.x1.r1)	voltage
+	409	v(onoise_total_r.x1.r1_1overf)	voltage
+	410	v(onoise_total_r.x1.r1_thermal)	voltage
+	411	v(onoise_total_r.x1.r2)	voltage
+	412	v(onoise_total_r.x1.r2_1overf)	voltage
+	413	v(onoise_total_r.x1.r2_thermal)	voltage
+	414	v(onoise_total_r.x1.r3)	voltage
+	415	v(onoise_total_r.x1.r3_1overf)	voltage
+	416	v(onoise_total_r3)	voltage
+	417	v(onoise_total_r3_1overf)	voltage
+	418	v(onoise_total_r3_thermal)	voltage
+Values:
+ 0	4.442872823412885e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.436478789585050e-06
+	4.797561232978167e-05
+	4.162363285559209e-06
+	3.832836286450141e-07
+	6.155153954053182e-05
+	2.376671600743204e-06
+	1.102141329664424e-04
+	1.031039209555121e-05
+	5.270806497752536e-06
+	5.028364638305137e-03
+	3.284990851102688e-02
+	5.024795180799210e-03
+	5.888500021490425e-07
+	5.887480147615535e-07
+	3.692531189154817e-05
+	1.054285720665791e-04
+	3.372489304823586e-03
+	1.502702230124128e-03
+	0.000000000000000e+00
+	1.484011189888037e-03
+	2.472994599192432e-09
+	5.869526262564833e-08
+	1.979397432345295e-04
+	0.000000000000000e+00
+	2.778539447332602e-08
+	1.290541434417442e-04
+	5.076876372621740e-07
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.205295870311896e-07
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.498746009966078e-03
+	0.000000000000000e+00
+	1.479917610582848e-03
+	2.472994599192432e-09
+	6.608065728781685e-08
+	1.983829444474557e-04
+	0.000000000000000e+00
+	3.666540501035920e-07
+	1.293726351548179e-04
+	9.263303717330625e-07
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.208738247926293e-07
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.139873537344557e-03
+	0.000000000000000e+00
+	1.129464922774431e-03
+	7.308749352279309e-08
+	0.000000000000000e+00
+	1.399334517840905e-04
+	0.000000000000000e+00
+	1.078099544682696e-13
+	6.340390431110949e-05
+	4.941747203948313e-06
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.966703386364378e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.272395611341501e-03
+	0.000000000000000e+00
+	1.260744290846027e-03
+	8.068957231301957e-08
+	0.000000000000000e+00
+	1.562076422330032e-04
+	0.000000000000000e+00
+	9.309456704416352e-06
+	7.077409091267036e-05
+	4.941770820153201e-06
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.191630533229239e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.345595512585595e-03
+	0.000000000000000e+00
+	1.345536185212197e-03
+	0.000000000000000e+00
+	2.932813482928955e-10
+	1.136927491505275e-05
+	0.000000000000000e+00
+	1.060156806851190e-09
+	5.830563441473445e-06
+	1.069816428903635e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.717324471154336e-07
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.171285106417872e-03
+	0.000000000000000e+00
+	1.171260204053662e-03
+	8.078027725473852e-10
+	0.000000000000000e+00
+	7.103045812119127e-06
+	0.000000000000000e+00
+	5.089232022509114e-07
+	3.157364475980825e-06
+	6.097581989088496e-07
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.033292410212607e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	8.309313017099539e-04
+	0.000000000000000e+00
+	8.308984148226925e-04
+	0.000000000000000e+00
+	2.141664240999192e-10
+	6.675610094030600e-06
+	0.000000000000000e+00
+	1.472339631787056e-09
+	3.383544348650468e-06
+	4.267318940100579e-09
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.058453933945958e-07
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.216998119430636e-04
+	0.000000000000000e+00
+	1.216918780780826e-04
+	0.000000000000000e+00
+	3.018780510443380e-11
+	1.250954387608962e-06
+	0.000000000000000e+00
+	1.172943092766348e-09
+	6.398624295261220e-07
+	1.533127615334463e-13
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.903109347603134e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	4.471173401083425e-05
+	0.000000000000000e+00
+	4.470439322578342e-05
+	1.564991114530052e-10
+	0.000000000000000e+00
+	7.507145260744189e-07
+	0.000000000000000e+00
+	7.203148422411439e-15
+	3.141653730745448e-07
+	1.081509666657318e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	5.801542595737015e-10
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.693212326861958e-06
+	0.000000000000000e+00
+	1.668706141474699e-06
+	2.587349995194526e-11
+	2.351773964781878e-11
+	2.820570148318217e-07
+	0.000000000000000e+00
+	4.129763555635641e-08
+	8.024396186753359e-09
+	3.307529646913119e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.388051458059316e-10
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.365426020409951e-05
+	0.000000000000000e+00
+	2.365397050637589e-05
+	2.034228667765381e-12
+	0.000000000000000e+00
+	2.044406450792124e-07
+	0.000000000000000e+00
+	4.667617584773555e-08
+	2.985571679537517e-08
+	6.340509409656734e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.688666092353934e-09
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.741692720467662e-04
+	0.000000000000000e+00
+	1.741692720467662e-04
+	1.741678827311796e-04
+	0.000000000000000e+00
+	1.741678827311796e-04
+	1.889348818996697e-06
+	0.000000000000000e+00
+	1.889348818996697e-06
+	2.354351333073290e-08
+	0.000000000000000e+00
+	2.354351333073290e-08
+	6.898145508606892e-06
+	1.979397432345295e-04
+	0.000000000000000e+00
+	2.086544204837938e-06
+	2.680927488331044e-11
+	6.230290658340123e-10
+	2.100830494929216e-06
+	0.000000000000000e+00
+	3.012164154697448e-10
+	1.369889385791327e-06
+	5.388921357904133e-09
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.340883101903828e-09
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.983829444474557e-04
+	0.000000000000000e+00
+	2.080782175139411e-06
+	2.680927488331044e-11
+	7.015300263436920e-10
+	2.105501908160230e-06
+	0.000000000000000e+00
+	3.892816809047222e-09
+	1.373269501935762e-06
+	9.833469600873204e-09
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.344542829942624e-09
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.399334517840905e-04
+	0.000000000000000e+00
+	1.588038047738224e-06
+	7.757974115232476e-10
+	0.000000000000000e+00
+	1.485146574713918e-06
+	0.000000000000000e+00
+	1.144394419567453e-15
+	6.730276522210368e-07
+	5.245486613971431e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.087640599980240e-10
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.562076422330032e-04
+	0.000000000000000e+00
+	1.772670342979290e-06
+	8.566221964751887e-10
+	0.000000000000000e+00
+	1.658122505429423e-06
+	0.000000000000000e+00
+	9.881840387753743e-08
+	7.512672973460739e-07
+	5.245511681721525e-08
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.326402113935646e-10
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.136927491505275e-05
+	0.000000000000000e+00
+	1.899723984088441e-06
+	0.000000000000000e+00
+	3.179408595190518e-12
+	1.215103416336652e-07
+	0.000000000000000e+00
+	1.813767218024781e-11
+	6.320817681872132e-08
+	1.187507148082126e-10
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.861723627846600e-09
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	7.103045812119127e-06
+	0.000000000000000e+00
+	1.646797875942311e-06
+	8.574407508041476e-12
+	0.000000000000000e+00
+	7.333580776017422e-08
+	0.000000000000000e+00
+	5.402847797204091e-09
+	3.351395144606170e-08
+	6.473356998632740e-09
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.158245138167716e-10
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	6.675610094030600e-06
+	0.000000000000000e+00
+	1.168247448418433e-06
+	0.000000000000000e+00
+	2.273265526165327e-12
+	6.975968527063480e-08
+	0.000000000000000e+00
+	2.521290434507382e-11
+	3.591437691417701e-08
+	4.855791942023880e-11
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.123487056390997e-09
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.250954387608962e-06
+	0.000000000000000e+00
+	2.075370974214414e-07
+	0.000000000000000e+00
+	5.167872952169220e-13
+	2.111448480951904e-08
+	0.000000000000000e+00
+	2.007970060284584e-11
+	1.095385282709777e-08
+	2.624572640805397e-15
+	0.000000000000000e+00
+	0.000000000000000e+00
+	3.257947137747263e-10
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	7.507145260744189e-07
+	0.000000000000000e+00
+	7.624025651744507e-08
+	2.679119998322695e-12
+	0.000000000000000e+00
+	1.278288734748854e-08
+	0.000000000000000e+00
+	1.233112398632761e-16
+	5.378220668898961e-09
+	1.851444490271763e-10
+	0.000000000000000e+00
+	0.000000000000000e+00
+	9.931704424888732e-12
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.820570148318217e-07
+	0.000000000000000e+00
+	2.845863355518306e-09
+	4.429303823747389e-13
+	4.026019446425927e-13
+	4.827577120959904e-09
+	0.000000000000000e+00
+	7.069773143223572e-10
+	1.373723803931787e-10
+	5.662184749690043e-10
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.376305208912417e-12
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	2.044406450792124e-07
+	0.000000000000000e+00
+	1.875612897420581e-07
+	4.720045746844793e-14
+	0.000000000000000e+00
+	1.886743485035480e-09
+	0.000000000000000e+00
+	4.957808078637767e-10
+	6.927454638341084e-10
+	6.730124913140159e-10
+	0.000000000000000e+00
+	0.000000000000000e+00
+	3.918313830029445e-11
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	0.000000000000000e+00
+	1.848800363396240e-06
+	0.000000000000000e+00
+	1.848800363396240e-06
+	1.848746774289370e-06
+	0.000000000000000e+00
+	1.848746774289370e-06
+	4.442872823412885e-08
+	0.000000000000000e+00
+	5.462830296486918e-10
+	0.000000000000000e+00
+	5.462830296486918e-10
+
