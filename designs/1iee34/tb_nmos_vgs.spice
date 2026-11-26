@@ -1,0 +1,38 @@
+** sch_path: /home/mraffo/designs/1iee34/tb_nmos_vgs.sch
+**.subckt tb_nmos_vgs
+V1 VDD GND 0.75
+V2 VSS GND 0
+V3 VGS GND 0.75
+XM1 VDD VGS VSS VSS sg13_lv_nmos w=widthn l=lengthn ng=1 m=1
+**** begin user architecture code
+
+.lib cornerMOSlv.lib mos_tt
+
+
+
+.param temp=27
+.param widthn=1u
+.param lengthn=0.13u
+.dc v3 0 1.5 0.01
+.save @n.xml.nsg13_lv_nmos[ids] v(VGS)
+
+.control
+	foreach wval 1u 2u 5u 10u
+		alterparam widthn = $wval
+		reset
+		run
+		let id_n = @n.xm1.nsg13_lv_nmos[ids]
+		let gm_n = deriv(id_n)
+		meas DC gm_n_value find gm_n when vgs=1.2
+		set filetype = ascii
+		write tb_nmos_vgs.raw id_n gm_n v(VGS)
+		set appendwrite
+		print gm_n_value
+	end
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

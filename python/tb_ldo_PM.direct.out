@@ -1,0 +1,5 @@
+Error opening osdi lib "/home/jaskun/pdks/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/cap_cmomi.osdi": No such file or directory!
+Error: Library /home/jaskun/pdks/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/cap_cmomi.osdi couldn't be loaded!
+Error opening osdi lib "/home/jaskun/pdks/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/cap_cmomf.osdi": No such file or directory!
+Error: Library /home/jaskun/pdks/IHP-Open-PDK/ihp-sg13g2/libs.tech/ngspice/osdi/cap_cmomf.osdi couldn't be loaded!
+tb_ldo_PM.spice: No such file or directory

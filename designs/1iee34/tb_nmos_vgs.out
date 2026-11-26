@@ -1,0 +1,67 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /home/mraffo/designs/1iee34/tb_nmos_vgs.sch
+
+Reset re-loads circuit ** sch_path: /home/mraffo/designs/1iee34/tb_nmos_vgs.sch
+
+Circuit: ** sch_path: /home/mraffo/designs/1iee34/tb_nmos_vgs.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 151
+
+Error: measure  gm_n_value  find(AT) : out of interval
+ meas dc gm_n_value find gm_n when vgs=1.2 failed!
+
+ASCII raw file "tb_nmos_vgs.raw"
+Warning from checkvalid: vector gm_n_value is not available or has zero length.
+Reset re-loads circuit ** sch_path: /home/mraffo/designs/1iee34/tb_nmos_vgs.sch
+
+Circuit: ** sch_path: /home/mraffo/designs/1iee34/tb_nmos_vgs.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 151
+
+Error: measure  gm_n_value  find(AT) : out of interval
+ meas dc gm_n_value find gm_n when vgs=1.2 failed!
+
+ASCII raw file "tb_nmos_vgs.raw"
+Warning from checkvalid: vector gm_n_value is not available or has zero length.
+Reset re-loads circuit ** sch_path: /home/mraffo/designs/1iee34/tb_nmos_vgs.sch
+
+Circuit: ** sch_path: /home/mraffo/designs/1iee34/tb_nmos_vgs.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 151
+
+Error: measure  gm_n_value  find(AT) : out of interval
+ meas dc gm_n_value find gm_n when vgs=1.2 failed!
+
+ASCII raw file "tb_nmos_vgs.raw"
+Warning from checkvalid: vector gm_n_value is not available or has zero length.
+Reset re-loads circuit ** sch_path: /home/mraffo/designs/1iee34/tb_nmos_vgs.sch
+
+Circuit: ** sch_path: /home/mraffo/designs/1iee34/tb_nmos_vgs.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 151
+
+Error: measure  gm_n_value  find(AT) : out of interval
+ meas dc gm_n_value find gm_n when vgs=1.2 failed!
+
+ASCII raw file "tb_nmos_vgs.raw"
+Warning from checkvalid: vector gm_n_value is not available or has zero length.
+Note: Simulation executed from .control section 
